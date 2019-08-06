@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Countries</title>
+		<link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/bundle.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>Population of the world {{totalPopulation}} </h1>
+
+			<ul>
+				<li v-for="(country, index) in countries">{{ country.name}}
+					<button id="country-details" @click="countryDetails(index)">Details</button>
+				</li>
+			</ul>
+
+		</div>
+	</body>
+</html>
